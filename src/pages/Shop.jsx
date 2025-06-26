@@ -63,23 +63,26 @@ const ProductList = () => {
       });
       setProducts(newsortData);
     }
+
+    // rating
+     if (e.target.value === "0-5") {
+      newsortData = products.slice().sort((a, b) => {
+        return a.rating - b.rating;
+      });
+      setProducts(newsortData);
+    }
+    if (e.target.value === "5-0") {
+      newsortData = products.slice().sort((a, b) => {
+        return b.rating - a.rating;
+      });
+      setProducts(newsortData);
+    }
   };
 
   useEffect(() => {
     // setProducts();
   }, [sorting]);
 
-  // const filteredProducts = products.filter((product) => {
-  //   if (
-  //     (selectedCategory.length === 0 ||
-  //       selectedCategory.some((category) =>
-  //         product.categories.map((c) => c._id).includes(category)
-  //       ))
-  //   ) {
-  //     return true;
-  //   }
-  //   return false;
-  // });
 
   const filteredProducts = products.filter((product) => {
     const inCategory =
@@ -110,6 +113,8 @@ const ProductList = () => {
                         <option value="high">Price (High to Low)</option>
                         <option value="a-z">Alphabet A-Z</option>
                         <option value="z-a">Alphabet Z-A</option>
+                        <option value="0-5">Rating 0-5</option>
+                        <option value="5-0">Rating 5-0</option>
                       </select>
                     </div>
                   </div>

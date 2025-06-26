@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1b7d3dd5.chunk.css",
+    "main.js": "/static/js/main.7fbf5110.chunk.js",
+    "main.js.map": "/static/js/main.7fbf5110.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5592d55f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5592d55f.js.map",
+    "static/css/2.7e223523.chunk.css": "/static/css/2.7e223523.chunk.css",
+    "static/js/2.8256a29c.chunk.js": "/static/js/2.8256a29c.chunk.js",
+    "static/js/2.8256a29c.chunk.js.map": "/static/js/2.8256a29c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.7e223523.chunk.css.map": "/static/css/2.7e223523.chunk.css.map",
+    "static/css/main.1b7d3dd5.chunk.css.map": "/static/css/main.1b7d3dd5.chunk.css.map",
+    "static/js/2.8256a29c.chunk.js.LICENSE.txt": "/static/js/2.8256a29c.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/static/media/2.f0ea8fce.jpg",
+    "static/media/4.952c9da6.jpg": "/static/media/4.952c9da6.jpg",
+    "static/media/electronics-banner-1.4705dd75.jpg": "/static/media/electronics-banner-1.4705dd75.jpg",
+    "static/media/electronics-banner-2.dbae4f65.jpg": "/static/media/electronics-banner-2.dbae4f65.jpg",
+    "static/media/jacket-1.033661cf.jpg": "/static/media/jacket-1.033661cf.jpg",
+    "static/media/jacket-4.9e08d384.jpg": "/static/media/jacket-4.9e08d384.jpg",
+    "static/media/kurtis.8aaf5702.webp": "/static/media/kurtis.8aaf5702.webp",
+    "static/media/lehanga.e6fa2e1c.webp": "/static/media/lehanga.e6fa2e1c.webp",
+    "static/media/mens-banner.52698706.jpg": "/static/media/mens-banner.52698706.jpg",
+    "static/media/sarees.2dcf68d3.webp": "/static/media/sarees.2dcf68d3.webp",
+    "static/media/shoe-4.9fcfb8a9.jpg": "/static/media/shoe-4.9fcfb8a9.jpg",
+    "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf",
+    "static/media/sport watch.0e1aba8e.webp": "/static/media/sport watch.0e1aba8e.webp",
+    "static/media/sports.f9e5fd67.webp": "/static/media/sports.f9e5fd67.webp",
+    "static/media/tops.34d556f4.webp": "/static/media/tops.34d556f4.webp",
+    "static/media/womens-banner.804a97a5.jpg": "/static/media/womens-banner.804a97a5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5592d55f.js",
+    "static/css/2.7e223523.chunk.css",
+    "static/js/2.8256a29c.chunk.js",
+    "static/css/main.1b7d3dd5.chunk.css",
+    "static/js/main.7fbf5110.chunk.js"
+  ]
+}
