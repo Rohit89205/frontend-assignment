@@ -1,0 +1,110 @@
+.cart-section {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+
+  .cart-content {
+    display: flex;
+    gap: 20px;
+
+    @media #{$lg-md-layout-1024} {
+      flex-direction: column;
+    }
+
+    .cart-data {
+      flex: 70%;
+
+      .cart-page-title {
+        // font-size: 20px;
+        margin-bottom: 1.5rem;
+      }
+
+      .cart-image {
+        img {
+          border-radius: 7px;
+        }
+      }
+
+      .cart-title{
+        .cart-product-title{
+          text-transform: capitalize;
+          color: $theme-color;
+          font-size: 17px;
+          font-weight: 600;
+        }
+      }
+
+      .product-cart-color {
+        display: flex;
+        align-items: center;
+
+        span{
+          margin-right: 7px;
+          font-weight: 500;
+        }
+      }
+
+      .cart-size{
+        font-weight: 500;
+      }
+
+      .move-cart{
+        background-color: #d6e3f6;
+        padding: 8px 12px;
+        color: $theme-color;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        width: -moz-fit-content;
+        width: fit-content;
+        cursor: pointer;
+        font-family: "poppins";
+        border-radius: 3px;
+      }
+
+      .cart-more-action {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 10px 0;
+      }
+    }
+    .cart-total-summary {
+      flex: 30%;
+      border: 0.5px solid lightgray;
+      border-radius: 10px;
+      padding: 20px;
+      height: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 1px 1px px;
+
+      .cart-summary-list {
+        padding: 10px 0;
+
+        li {
+          padding: 6px 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          &:last-child {
+            border-top: 1px solid #ededed;
+          }
+
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .cart-row {
+    display: flex;
+
+    .cart-col {
+      flex: 70%;
+    }
+    .order-col {
+      flex: 30%;
+    }
+  }
+}

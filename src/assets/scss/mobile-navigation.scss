@@ -1,0 +1,113 @@
+.mobile-bottom-navigation {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  background-color: $white;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  z-index: 5;
+  border-radius: 10px 10px 0 0;
+
+  @media #{$lg-md-layout-1025-min} {
+    display: none;
+  }
+
+  @media #{$xxs-md-layout-425-max}{
+    border-radius: 0;
+  }
+
+  .action-btn {
+    position: relative;
+    font-size: 26px;
+    color: $eerie-black;
+    padding: 10px;
+
+    .count {
+      background: $theme-color;
+      color: $white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1;
+      padding: 2px 4px;
+      border-radius: 20px;
+    }
+  }
+}
+
+.mobile-navigation-menu {
+  .menu-top {
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid $light-grey;
+  }
+
+  .mobile-menu-category-list {
+    margin-bottom: 30px;
+
+    .menu-category {
+      border-bottom: 1px solid $light-grey;
+
+      .menu-title {
+        color: $onyx;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 12px 0;
+      }
+
+      .accordion-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & > div {
+          font-size: 16px;
+        }
+      }
+
+      .submenu-category-list {
+        margin-left: 10px;
+        // overflow: hidden;
+        // visibility: hidden;
+        transition: 0.5s ease-in-out;
+
+        .submenu-title {
+          padding: 6px 0;
+          font-size: 15px;
+          color: $grey;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+.side-drawer {
+  position: fixed;
+  top: 0;
+  // left: -100%;
+  z-index: 100;
+  width: 100%;
+  max-width: 320px;
+  height: 100%;
+  padding: 20px;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  // visibility: hidden;
+  transition: 0.5s ease;
+  background: $white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}

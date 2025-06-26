@@ -1,0 +1,41 @@
+table{
+    width: 100%;
+    border-spacing: 0;
+
+    &>thead{
+        &>tr{
+            border-bottom: 1px solid red;
+        }
+    }
+
+    &>tbody {
+        &>tr {
+            &>td {
+                padding: 10px;
+                border-bottom: 1px solid #efefef;
+                position: relative;
+
+                &.cart-image {
+                    text-align: center;
+                    img {
+                        height: 80px;
+                        width: 80px;
+                        border-radius: 10px;
+                        object-fit: cover;
+                        border: 1px solid #efefef;
+                    }
+                }
+
+                &.cart-qty{
+                    text-align: center;
+                }
+                &.cart-total{
+                    text-align: center;
+                }
+                &.cart-action{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

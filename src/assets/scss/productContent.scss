@@ -1,0 +1,15 @@
+.product-contents{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    @media #{$lg-md-layout-1024}{
+        display: block;
+    }
+
+    .product-data{
+        min-width: calc(75% - 15px);
+    }
+}

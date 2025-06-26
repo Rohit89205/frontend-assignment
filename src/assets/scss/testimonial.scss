@@ -1,0 +1,38 @@
+.testimonial-card {
+  padding: 30px 20px;
+  border: 1px solid $light-grey;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 25px;
+
+  .testimonial-banner {
+    margin: auto;
+    margin-bottom: 20px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .testimonial-name {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $grey;
+    margin-bottom: 5px;
+  }
+  .testimonial-title {
+    color: #454545;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .quotation-img{
+    margin: auto;
+    margin-bottom: 10px;
+    color: $theme-color;
+    font-size: 23px;
+    font-weight: 700;
+  }
+  .testimonial-desc{
+    max-width: 70%;
+    margin: auto;
+    color: $grey;
+    font-size: 16px;
+  }
+}

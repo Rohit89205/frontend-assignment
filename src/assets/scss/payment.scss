@@ -1,0 +1,184 @@
+.payment {
+  margin: 3rem 0 2rem 0;
+
+  .payment-data {
+    display: flex;
+
+    @media #{$md-layout-991-max} {
+      flex-direction: column;
+    }
+
+    .payment-form {
+      flex: 60%;
+      padding: 1rem;
+
+      @media #{$xxs-md-layout-425-max} {
+        padding: 0;
+      }
+    }
+    .payment-method {
+      flex: 40%;
+      padding: 1rem;
+      margin: 0 auto;
+      padding: 20px;
+      max-width: 420px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      line-height: 2;
+
+      @media #{$md-layout-991-max} {
+        max-width: 100%;
+      }
+
+      @media #{$xs-med-layout-576} {
+        margin: 0 1rem;
+      }
+
+      @media #{$xxs-md-layout-425-max} {
+        padding: 8px;
+        margin: 0;
+      }
+
+      .payment-methods {
+        .coupon-method-box {
+          border: 1px solid #eee;
+          border-radius: 4px;
+          display: flex;
+          overflow: hidden;
+
+          .coupon-input {
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 4px 12px;
+            font-size: 18px;
+            text-transform: uppercase;
+          }
+        }
+        .all-payment-radio {
+          border: 1px solid #eee;
+          margin-bottom: 1rem;
+        }
+        .payment-method-box {
+          border-bottom: 1px solid #eee;
+
+          [type="radio"]:checked,
+          [type="radio"]:not(:checked) {
+            position: absolute;
+            left: -9999px;
+          }
+
+          // [type="radio"]:checked label{
+          //   border: 1px solid red;
+          // }
+
+          // [type="radio"]:checked + label {
+          //   padding: 1rem;
+          //   padding-bottom: .3rem;
+          // }
+
+          label {
+            font-size: 1.2rem;
+            font-weight: 600;
+            position: relative;
+            padding: 1rem;
+            cursor: pointer;
+            line-height: 20px;
+            display: block;
+            border-radius: 10px;
+            margin: 0.3rem 0;
+            min-width: 200px;
+            width: 100%;
+            padding-left: 2.8rem;
+            transition: all 0.3s;
+          }
+          [type="radio"]:checked + label:before,
+          [type="radio"]:not(:checked) + label:before {
+            content: "";
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #ddd;
+            border-radius: 100%;
+            background: var(--white-background);
+            transform: translateY(-50%);
+          }
+
+          [type="radio"]:checked + label:after,
+          [type="radio"]:not(:checked) + label:after {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background: $theme-color;
+            position: absolute;
+            top: 20px;
+            left: 19px;
+            border-radius: 100%;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+          }
+          [type="radio"]:checked + label:after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+          }
+          [type="radio"]:not(:checked) + label:after {
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+          }
+
+          [type="radio"]:checked ~ .card-body {
+            display: block;
+          }
+          .card-body {
+            padding: 0 0.5rem;
+            padding-left: 2.65rem;
+            padding-bottom: 1rem;
+            display: none;
+
+            p {
+              font-size: 15px;
+              line-height: 23px;
+            }
+          }
+        }
+      }
+
+      .checkout-product-data {
+        .checkout-product-price-summary {
+          padding: 10px 0;
+
+          li {
+            padding: 6px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &:last-child {
+              border-top: 1px solid #ededed;
+              border-bottom: 1px solid #ededed;
+            }
+
+            .price-summary-left {
+              font-weight: 600;
+              font-size: 0.85rem;
+              flex-grow: 1;
+              color: #383838c7;
+            }
+            .price-summary-right {
+              font-weight: 600;
+              font-size: 0.9rem;
+              margin-left: 10px;
+              width: 70px;
+              text-align: right;
+              color: #2a2929;
+            }
+          }
+        }
+      }
+    }
+  }
+}

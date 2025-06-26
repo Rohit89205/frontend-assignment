@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Mallanna&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+
+$theme-font: 'Poppins', sans-serif;
+$theme-color: #3474d4; //#ff8f9c;
+$secondary-color: #333;
+$light-grey: #ededed; // cultured
+$navy-blue-shade: #2c3e50;
+
+$eerie-black: #212121;
+$grey: #787878;  // sonic-silver
+$white: #fff;
+$onyx: #454545;  // onyx
+$bg-navy-blue-shade: #2c3e50;
+$bg-grey-shade-1: #ccc;
+
+$ternary-background-color: #f2f2f2;
+$background-white: #ffffff;
+
+
+
+/* MEDIA QUERIES */
+$lg-md-layout-1024: "only screen and (max-width: 1024px)";
+$lg-md-layout-1025-min: "only screen and (min-width: 1025px)";
+
+$md-layout-991-max: "only screen and (max-width: 991px)";
+$md-layout-991-min: "only screen and (min-width: 991px)";
+
+$xs-layout-767-max: "only screen and (max-width: 767px)";
+$xs-layout-767-min: "only screen and (min-width: 767px)";
+
+$xs-med-layout-576: "only screen and (max-width: 576px)";
+$xs-med-layout-576-min: "only screen and (min-width: 576px)";
+
+$xxs-md-layout-425-max: "only screen and (max-width: 425px)";
+$xxs-md-layout-425-min: "only screen and (min-width: 425px)";

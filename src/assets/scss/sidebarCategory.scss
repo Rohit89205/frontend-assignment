@@ -1,0 +1,72 @@
+.sidebarCategory {
+  // padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  height: 440px;
+  // background-image: url('../images/banners/coupon.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .sidebar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .sidebar-title {
+      color: #454545;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      font-weight: 600;
+    }
+  }
+  .sidebar-accordion-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    cursor: pointer;
+
+    .menu-title-flex {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .menu-title {
+        font-size: 17px;
+        color: $grey;
+        font-weight: 600;
+        font-family: $theme-font;
+      }
+    }
+
+    .cat-icon {
+      color: $grey;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+  .sidebar-submenu-category-list {
+    border-top: 1px solid $light-grey;
+  
+    .sidebar-submenu-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $grey;
+        padding: 2px 0;
+
+        .product-name{
+            text-transform: capitalize;
+            font-size: 15px;
+        }
+        .stock{
+            font-size: 14px;
+        }
+    }
+  }
+}

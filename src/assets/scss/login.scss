@@ -1,0 +1,121 @@
+.login-section {
+  width: 100vw;
+  height: 100vh; // 700px
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .form-wrapper {
+    border-radius: 6px;
+    width: 400px;
+    // background-color: rgba(0, 0, 0, .75);
+    padding: 40px 30px 24px;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      color: $secondary-color;
+    }
+
+    .form {
+      margin: 16px 0 0;
+      display: flex;
+      flex-direction: column;
+
+      .form-input {
+        display: flex;
+        flex-direction: column;
+        margin: 8px 0;
+
+        .mail-texts {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .verify-mail {
+          font-size: 15px;
+          align-self: flex-end;
+          line-height: 22px;
+          text-decoration: underline;
+          color: #dc3545;
+          margin-top: 3px;
+
+        }
+
+        .submit-otp{
+            margin-top: 3px;
+        }
+
+        .mail-verification-box {
+          display: flex;
+          flex-direction: column;
+          margin: 10px 0 2px;
+          //   input {
+          //     // width: 30px !important;
+          //     width: 40px !important;
+          //     padding: 16px;
+          //     margin: 0 12px;
+          //   }
+        }
+      }
+
+      input {
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        color: $secondary-color;
+        background-color: $white;
+        font-size: 1rem;
+        flex: 1;
+        min-width: 40%;
+        padding: 16px 10px;
+        border: 1px solid #ced4da;
+        transition: all 0.1s ease;
+
+        &:hover {
+          border: 2px solid $theme-color;
+        }
+      }
+
+      .new-signup {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        .signup-links {
+          transition: all 0.3s ease;
+          &:hover {
+            color: $theme-color;
+            text-decoration: underline;
+            transform: scale(1.05);
+          }
+        }
+      }
+      .login-text {
+        padding: 0 14px;
+        p {
+          font-size: 14px;
+          line-height: 18px;
+          color: $grey;
+          text-align: center;
+          font-weight: 400;
+        }
+      }
+      .agreement {
+        font-size: 12px;
+        line-height: 12px;
+        padding-left: 5;
+        margin: 5px 0 10px 0;
+      }
+    }
+  }
+}

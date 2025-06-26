@@ -1,0 +1,18 @@
+
+
+.sidebar-data {
+  position: sticky;
+  top: 30px;
+  left: 0;
+  padding: 0;
+  min-width: calc(25% - 15px);
+  margin-bottom: 30px;
+  visibility: visible;
+  overflow-y: auto;
+  overscroll-behavior: auto;
+  z-index: 0;
+
+  @media #{$lg-md-layout-1024} {
+    display: none;
+  }
+}
